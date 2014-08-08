@@ -1,0 +1,11 @@
+---
+- name: Install ruby rails 
+  hosts: redmine-server
+  user: docker
+  remote_user: docker
+  sudo: yes
+
+  roles:
+    - common
+    - ruby
+
